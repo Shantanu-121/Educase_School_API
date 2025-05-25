@@ -4,7 +4,7 @@ const mysql = require("mysql2");
 require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -111,6 +111,6 @@ app.get("/listSchools", (req, res) => {
   });
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at http://localhost:${port}`);
 });
