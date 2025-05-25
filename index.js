@@ -8,10 +8,10 @@ const port = 4000;
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: "127.0.0.1",
+  host: "yamanote.proxy.rlwy.net",
   user: "root",
-  password: "Shantanu123@",
-  database: "project",
+  password: "anfEFrQDzJNonrRSBQznVHwXVDsvETef",
+  database: "railwayDB",
 });
 
 db.connect((err) => {
