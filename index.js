@@ -1,16 +1,18 @@
 const express = require("express");
 const mysql = require("mysql2");
 
+require("dotenv").config();
+
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: "yamanote.proxy.rlwy.net",
-  user: "root",
-  password: "anfEFrQDzJNonrRSBQznVHwXVDsvETef",
-  database: "railwayDB",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 db.connect((err) => {
@@ -102,7 +104,9 @@ app.get("/listSchools", (req, res) => {
       );
     });
 
-    allSchools.sort((school1, school2) => school1.difference - school2.difference);
+    allSchools.sort(
+      (school1, school2) => school1.difference - school2.difference
+    );
     return res.json(allSchools);
   });
 });
