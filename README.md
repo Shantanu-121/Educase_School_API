@@ -7,7 +7,7 @@ Add School: Add a school record with validated inputs.
 List Schools by Proximity: Retrieve all schools ordered by distance from a user-specified latitude and longitude.
 
 # API Endpoints
-1. POST /addSchool
+1. POST / "/addSchool"
 Adds a new school to the database.
 
 Request Body Parameters:
@@ -19,7 +19,7 @@ Request Body Parameters:
 Description:
 Validates input data to ensure consistency before storing the school information in the database.
 
-2. GET /listSchools
+2. GET / "/listSchools"
 Retrieves a list of all schools ordered by proximity to the given coordinates.
 
 Query Parameters:
