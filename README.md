@@ -11,8 +11,6 @@ List Schools by Proximity: Retrieve all schools ordered by distance from a user-
 Adds a new school to the database.
 
 Request Body Parameters:
-
-Parameter	Type	Description
 a. name	- String	(Name of the school)
 b. address - String	(School address)
 c. latitude	- Float	(Geographical latitude)
@@ -25,8 +23,6 @@ Validates input data to ensure consistency before storing the school information
 Retrieves a list of all schools ordered by proximity to the given coordinates.
 
 Query Parameters:
-
-Parameter	Type	Description
 a. latitude	- Float	(Latitude of the user's location)
 b. longitude - Float	(Longitude of the user's location)
 
