@@ -51,7 +51,7 @@ You can test the API endpoints using Postman or any other API client:
 
 Base URL: http://localhost:4000
 
-Endpoints: /addSchool (POST), /listSchools (GET)
+Endpoints: "/addSchool" (POST), "/listSchools" (GET)
 
 # Hosted API
 
