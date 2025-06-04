@@ -1,5 +1,5 @@
 # Educase School API
-A RESTful API backend built with Node.js and MySQL for managing school data. This API supports adding new schools and listing schools ordered by proximity to a given location.
+A RESTful API backend built with Node JS and MySQL for managing school data. This API supports adding new schools and listing schools ordered by proximity to a given location.
 
 # Features
 Add School: Add a school record with validated inputs.
