@@ -53,11 +53,6 @@ Base URL: http://localhost:4000
 
 Endpoints: "/addSchool" (POST), "/listSchools" (GET)
 
-# Hosted API
-
-The API is deployed and accessible online:
-
-https://educaseschoolapi-production.up.railway.app/
 
 # Technologies Used
 1. Node.js
